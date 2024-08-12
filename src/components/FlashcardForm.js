@@ -24,11 +24,14 @@ const FlashcardForm = ({ initialData = {}, onSubmit }) => {
       if (initialData?.id) {
         flashcard.id = initialData?.id;
         await axios.put(
-          `http://localhost:5000/api/flashcards/${initialData?.id}`,
+          `https://flashcard-backend-alz3.onrender.com/api/flashcards/${initialData?.id}`,
           flashcard
         );
       } else {
-        await axios.post("http://localhost:5000/api/flashcards", flashcard);
+        await axios.post(
+          "https://flashcard-backend-alz3.onrender.com/api/flashcards",
+          flashcard
+        );
       }
       onSubmit();
       setQuestion("");

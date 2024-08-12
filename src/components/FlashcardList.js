@@ -15,7 +15,9 @@ const FlashcardList = () => {
 
   const fetchFlashcards = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/flashcards");
+      const response = await axios.get(
+        "https://flashcard-backend-alz3.onrender.com/api/flashcards"
+      );
       setFlashcards(response.data);
     } catch (error) {
       console.error("Error fetching flashcards:", error);
@@ -24,7 +26,9 @@ const FlashcardList = () => {
 
   const deleteFlashcard = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/flashcards/${id}`);
+      await axios.delete(
+        `https://flashcard-backend-alz3.onrender.com/api/flashcards/${id}`
+      );
       fetchFlashcards();
     } catch (error) {
       console.error("Error deleting flashcard:", error);
