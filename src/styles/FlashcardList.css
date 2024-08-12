@@ -1,0 +1,132 @@
+/* Styles for the Flashcard List and Flashcard Display */
+
+.flashcard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .flashcard {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .flashcard .inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flashcard.flipped .inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard .front,
+  .flashcard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .flashcard .front {
+    background: #007bff;
+  }
+  
+  .flashcard .back {
+    background: #28a745;
+    transform: rotateY(180deg);
+  }
+  
+  .button {
+    background-color: #028c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 5px;
+  }
+  
+
+
+/* Styles for the Flashcard List and Flashcard Display */
+
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Wrapper for Flashcard and Side Buttons */
+.flashcard-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcard {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Position buttons on the sides */
+.button-edit,
+.button-delete {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-edit {
+  left: -200px; /* Adjust as needed */
+}
+
+.button-delete {
+  right: -200px; /* Adjust as needed */
+}
+
+/* Position the Previous and Next buttons below the flashcard */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.prev,
+.nxt {
+  padding: 10px 20px;
+  margin: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+

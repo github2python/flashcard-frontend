@@ -1,0 +1,60 @@
+.app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.flashcard-list {
+    padding: 5px;
+}
+
+.flashcard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.flashcard .front,
+.flashcard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.flashcard .front {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.flashcard .back {
+    background-color: #4CAF50;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped .front {
+    transform: rotateY(180deg);
+}
+
+.flashcard.flipped .back {
+    transform: rotateY(0deg);
+}
+
+button {
+    margin: 5px;
+    padding: 10
+}

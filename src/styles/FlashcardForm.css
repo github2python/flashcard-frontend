@@ -1,0 +1,121 @@
+/* Styles for the Flashcard Form */
+
+.flashcard-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flashcard-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .flashcard-form input,
+  .flashcard-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .flashcard-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .flashcard-form button:hover {
+    background-color: #0056b3;
+  }
+
+  
+
+
+/* Common Button Styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.prev{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+   
+}
+.nxt{
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+/* Edit Button Styles */
+.button-edit {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: 2px solid #4CAF50; /* Green border */
+}
+.button-nxt {
+  background-color: #58038d; /* Green background */
+  color: white; /* White text */
+  border: 2px solid #58038d; /* Green border */
+}
+.button-edit:hover {
+  background-color: white; /* White background on hover */
+  color: #4CAF50; /* Green text on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+.button-nxt:hover {
+  background-color: white; /* White background on hover */
+  color: #58038d; /* Green text on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Delete Button Styles */
+.button-delete {
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+  border: 2px solid #f44336; /* Red border */
+}
+
+.button-delete:hover {
+  background-color: white; /* White background on hover */
+  color: #f44336; /* Red text on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+  
